@@ -1,0 +1,68 @@
+<div class="container">
+	<div class="row flex-xl-nowrap">
+		<form class="form-inline">
+		  <div class="form-group mb-2">
+		    <select>
+		    	<option>2018</option>
+		    </select>
+		  </div>
+		  <div class="form-group mb-2">
+		    <select>
+		    	<option>Mart</option>
+		    </select>
+		  </div>
+		  <div class="form-group mb-2">
+		    <select>
+		    	<option>Sedat Pekmez</option>
+		    </select>
+		  </div>
+		  <button type="submit" class="btn btn-primary mb-2">Programı Görüntüle</button>
+		  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#mynewpost">
+            New Post
+          </button>
+		</form>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row flex-xl-nowrap">
+		<table class="table table-sm table-bordered" style="text-align: center !important">
+			<thead style="font-size: 14px !important;">
+		    <tr class="thead-dark bg-success">
+		      <th scope="col">saat<br>tarih</th>
+		      <th scope="col">8.00-8.50</th>
+		      <th scope="col">9.00-9.50</th>
+		      <th scope="col">10.00-10.50</th>
+		      <th scope="col">11.00-11.50</th>
+		      <th scope="col">12.00-12.50</th>
+		      <th scope="col">13.00-13.50</th>
+		      <th scope="col">14.00-14.50</th>
+		      <th scope="col">15.00-15.50</th>
+		      <th scope="col">16.00-16.50</th>
+		      <th scope="col">17.00-17.50</th>
+		      <th scope="col">18.00-18.50</th>
+		      <th scope="col">19.00-19.50</th>
+		      <th scope="col">20.00-20.50</th>
+		      <th scope="col">21.00-21.50</th>
+		    </tr>
+			<% (1..@x).each do |i| %>
+				<tr>
+				  	<td class="p-3 mb-2 bg-success text-white"><%= i %><br/>Mart</td>
+				  	<td></td> 
+				 	<td></td> 
+					<td></td> 
+					<td></td> 
+					<td></td> 
+					<td></td> 
+					<td></td> 
+					<td></td> 
+					<td></td> 
+					<td></td> 
+					<td></td> 
+					<td></td> 
+					<td></td> 
+					<td></td> 
+				</tr>
+			<% end %>
+		</table>
+	</div>	
+</div>
